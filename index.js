@@ -7,7 +7,7 @@ function playgame() {
     botinput = Math.floor(Math.random() * 100) % 3;
     console.log(botinput);
 
-    if (userInput >= 3) {
+    if (userInput >= 3 && userInput < 0 ) {
         console.log("false input");
     }
 
