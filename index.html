@@ -8,19 +8,23 @@
     <script src="index.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="bg-light">
 
-    <div class="position-absolute top-50 start-50 translate-middle">
-        <div class="block">
-            <p>Enter 0=Rock , 1=Paper , 2=Scissors</p>
-            <input type="text" id="user-Input" class="form-control" placeholder="Enter 0, 1, or 2" style="margin:20px;">
-            <button onclick="playgame()" class="btn btn-outline-primary" >Play</button>
+    <div class="container vh-100 d-flex justify-content-center align-items-center">
+        <div class="card shadow-lg p-4" style="max-width: 400px; width: 100%;">
+            <div class="card-body text-center">
+                <h3 class="card-title mb-3">Rock Paper Scissors</h3>
+                <p class="text-muted">Enter <b>0 = Rock</b>, <b>1 = Paper</b>, <b>2 = Scissors</b></p>
+                <input type="text" id="user-Input" class="form-control mb-3" >
+                <button onclick="playgame()" class="btn btn-primary w-100">Play</button>
+                <div id="result" class="alert alert-info mt-4"></div>
+                <div id="bot" class="alert alert-secondary mt-2"></div>
+            </div>
         </div>
     </div>
+
 </body>
 
 </html>
